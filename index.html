@@ -90,13 +90,13 @@
         <div class="withdraw">
           <label for="convertSelect" class="muted">Choose package (coins → TON):</label>
           <select id="convertSelect" class="select">
-            <option value="10000">10,000 → 0.1 TON</option>
-            <option value="30000">30,000 → 0.3 TON</option>
-            <option value="50000">50,000 → 0.5 TON</option>
-            <option value="100000">100,000 → 1.0 TON</option>
-            <option value="300000">300,000 → 3.0 TON</option>
-            <option value="500000">500,000 → 5.0 TON</option>
-            <option value="1000000">1,000,000 → 10.0 TON</option>
+            <option value="50000">50,000 → 0.4 TON</option>
+            <option value="70000">70,000 → 0.6 TON</option>
+            <option value="90000">90,000 → 0.9 TON</option>
+            <option value="500000">500,000 → 4.0 TON</option>
+            <option value="700000">700,000 → 6.0 TON</option>
+            <option value="900000">900,000 → 11.0 TON</option>
+            <option value="1000000">1,000,000 → 15.0 TON</option>
           </select>
 
           <div id="selectedInfo" class="small-muted">Wallet must be connected to withdraw. You will confirm transaction in your wallet.</div>
@@ -260,7 +260,7 @@
     });
 
     function coinsToTon(coins){
-      const map = { 10000:0.1, 30000:0.3, 50000:0.5, 100000:1.0, 300000:3.0, 500000:5.0, 1000000:10.0 };
+      const map = { 50000:0.4, 70000:0.6, 90000:0.9, 500000:4.0, 700000:6.0, 900000:11.0, 1000000:15.0 };
       return map[coins] ?? 0;
     }
 
